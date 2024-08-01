@@ -1,44 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <!-- the favicon is the icon that appears in the browser tab -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Github Signature -->
+    <script src="https://kit.fontawesome.com/00de0829d0.js" crossorigin="anonymous"></script>
+
+    <title>E-commerce product page | Frontend Mentor</title>
+
 </head>
+
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="header-container__mobile-menu">
+                    <img src="/images/icon-menu.svg" alt="menu" class="mobile-menu">
+                </div>
+                <div class="header-container__title">sneakers</div>
+                <div class="header-container__cart">
+                    <img src="/images/icon-cart.svg" alt="cart">
+                </div>
+                <div class="header-container__avatar">
+                    <img src="/images/image-avatar.png" alt="avatar">
+                </div>
 
-  Sneaker Company
+            </div>
 
-  Fall Limited Edition Sneakers
+            <div class="menu-container">
+                <div class="menu-container__close">
+                    <img src="/images/icon-close.svg" alt="close">
+                </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+                <div class="menu-container__option">
+                    <a href="#">Collections</a>
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+        </header>
 
-  $125.00
-  50%
-  $250.00
+        <main>
+            <div class="galery-container">
+                <div class="galery-container__previous">
+                    <img src="./images/icon-previous.svg" alt="previous">
+                </div>
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+                <img src="./images/image-product-1.jpg" alt="product" class="galery-container__image">
+
+                <div class="galery-container__next">
+                    <img src="./images/icon-next.svg" alt="next" class="test">
+                </div>
+
+            </div>
+
+            <div class="content-container">
+                <div class="content-container__company">
+                    Sneaker Company
+                </div>
+
+                <div class="content-container__title">
+                    Fall Limited Edition Sneakers
+                </div>
+
+                <div class="content-container__description">
+                    These low-profile sneakers are your perfect casual wear companion. Featuring a
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.
+                </div>
+
+                <div class="content-container__price-container">
+
+                    <div class="price-container__new-price">$125.00</div>
+                    <div class="price-container__discount">50%</div>
+                    <div class="price-container__old-price">$250.00</div>
+                </div>
+
+                <div class="content-contanainer__range-container">
+                    <div class="range-container__minus">
+                        <img src="./images/icon-minus.svg" alt="minus-sign">
+                    </div>
+
+                    <div class="range-container__range">0</div>
+
+                    <div class="range-container__plus">
+                        <img src="./images/icon-plus.svg" alt="plus-sign">
+                    </div>
+                </div>
+
+                <div class="content-container__cart">
+                    Add to cart
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+                Mentor</a>.
+            Coded by <a href="https://github.com/Ryusaem">Ryusaem</a>.
+        </div>
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            <a href="https://github.com/Ryusaem" target="_blank">
+                Ryusaem
+                <i class="fa-brands fa-github fa-beat-fade"></i>
+            </a>
+        </p>
+    </footer>
+
 </body>
+
 </html>
