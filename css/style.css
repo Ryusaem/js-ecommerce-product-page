@@ -459,7 +459,10 @@ div {
   /* -- CONTENT CONTAINER --- */
 
   .content-container {
-    gap: 10px;
+    gap: 0px;
+    width: 80%;
+    padding: 0;
+    display: grid;
   }
 
   .content-container__company {
@@ -477,24 +480,54 @@ div {
     line-height: 1.5;
   }
 
-  .content-container .content-container__price-container {
+  .content-container__price-container {
     width: 45%;
     flex-wrap: wrap;
+    /* margin-top: -30px; */
+  }
+
+  .price-container__new-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .price-container__discount {
+    font-size: 0.8rem;
+    margin-left: -50px;
   }
 
   .price-container__old-price {
-    margin-top: -20px;
+    font-size: 0.6rem;
+    margin-top: -30px;
   }
 
   .content-container__range-cart {
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: 30px;
     gap: 20px;
   }
 
+  /* .range-container__minus img,
+  .range-container__plus img {
+    height: 10px;
+    width: 10px;
+  } */
+
   .content-container__cart {
     flex-grow: 2;
-    height: 40px;
+    height: 30px;
+    gap: 8px;
+  }
+
+  .cart__icon img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .cart__text,
+  .range-container__range-value {
+    font-size: 0.8rem;
   }
 }
