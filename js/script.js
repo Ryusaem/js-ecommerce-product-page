@@ -6,6 +6,9 @@ const previousButton = document.querySelector(".galery-container__previous");
 const nextButton = document.querySelector(".galery-container__next");
 let currentImage = document.querySelector(".galery-container__image");
 
+const miniature = document.querySelectorAll(".miniature");
+let activeMiniature = document.querySelector(".active-miniature");
+
 const minusButton = document.querySelector(".range-container__minus");
 const plusButton = document.querySelector(".range-container__plus");
 const rangeValue = document.querySelector(".range-container__range-value");
@@ -33,6 +36,14 @@ function previousImage() {
   }.jpg`;
 }
 
+function displaySelectedImage() {
+  currentImage.src = this.src;
+  activeMiniature.classList.remove("active-miniature");
+  this.classList.add("active-miniature");
+
+  activeMiniature = this; // Update active miniature
+}
+
 function addElement() {
   rangeValue.textContent = +rangeValue.textContent + 1;
 }
@@ -51,3 +62,7 @@ nextButton.addEventListener("click", nextImage);
 
 minusButton.addEventListener("click", removeElement);
 plusButton.addEventListener("click", addElement);
+
+miniature.forEach((element) => {
+  element.addEventListener("click", displaySelectedImage);
+});
