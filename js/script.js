@@ -9,6 +9,10 @@ let currentImage = document.querySelector(".galery-container__image");
 const miniature = document.querySelectorAll(".miniature");
 let activeMiniature = document.querySelector(".active-miniature");
 
+let modalContainer = document.querySelector(
+  ".galery-container__modal-container"
+);
+
 const minusButton = document.querySelector(".range-container__minus");
 const plusButton = document.querySelector(".range-container__plus");
 const rangeValue = document.querySelector(".range-container__range-value");
@@ -65,4 +69,16 @@ plusButton.addEventListener("click", addElement);
 
 miniature.forEach((element) => {
   element.addEventListener("click", displaySelectedImage);
+});
+
+// testing modal
+currentImage.addEventListener("click", () => {
+  // console.log("clicked");
+  modalContainer.style.display = "grid";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modalContainer) {
+    modalContainer.style.display = "none";
+  }
 });
