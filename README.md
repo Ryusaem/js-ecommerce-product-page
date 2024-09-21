@@ -77,7 +77,7 @@ Total:
 
 ## Author -
 
-- Github - [@Ryusaem](https://github.com/Ryusaem) -
+- Github - [@Ryusaem](https://github.com/Ryusaem)
 - Linkedin - [@sambath-meas](https://www.linkedin.com/in/sambath-meas)
 - Coursera - [@sambath-meas](https://www.coursera.org/learner/sambath-meas)
 - Twitter - [@RyuBraveheart](https://twitter.com/RyuBraveheart)
