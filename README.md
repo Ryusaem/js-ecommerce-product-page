@@ -1,6 +1,6 @@
-# Frontend Mentor - REPLACE
+# E-commerce product page
 
-[FrontEnd Mentor Page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub)
+[FrontEndMentor Project Page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub)
 
 ## Table of contents
 
@@ -80,5 +80,6 @@ Total:
 - Github - [@Ryusaem](https://github.com/Ryusaem) -
 - Linkedin - [@sambath-meas](https://www.linkedin.com/in/sambath-meas)
 - Coursera - [@sambath-meas](https://www.coursera.org/learner/sambath-meas)
-- Twitter - [@RyuBraveheart](https://twitter.com/RyuBraveheart) - - - Frontend Mentor - [@Ryusaem](https://www.frontendmentor.io/profile/Ryusaem)
+- Twitter - [@RyuBraveheart](https://twitter.com/RyuBraveheart)
+- Frontend Mentor - [@Ryusaem](https://www.frontendmentor.io/profile/Ryusaem)
 - CodeWars - [@Ryusaem](https://www.codewars.com/users/Ryusaem)
