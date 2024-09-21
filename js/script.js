@@ -12,6 +12,9 @@ let activeMiniature = document.querySelector(".active-miniature");
 let modalContainer = document.querySelector(
   ".galery-container__modal-container"
 );
+let modalClose = document.querySelector(".modal-container__close");
+let modalPreviousButton = document.querySelector(".modal-container__previous");
+let modalNextButton = document.querySelector(".modal-container__next");
 
 const minusButton = document.querySelector(".range-container__minus");
 const plusButton = document.querySelector(".range-container__plus");
@@ -25,19 +28,22 @@ function nextImage() {
   let currentImageNumber = +currentImage[0].src.match(/[0-9](?=.jpg)/).join("");
   let nextImageNumber = (currentImageNumber + 1) % 5;
 
-  currentImage[0].src = `images/image-product-${
-    nextImageNumber === 0 ? 1 : nextImageNumber
-  }.jpg`;
-  // console.log(currentImage.src);
+  currentImage.forEach((element) => {
+    element.src = `images/image-product-${
+      nextImageNumber === 0 ? 1 : nextImageNumber
+    }.jpg`;
+  });
 }
 
 function previousImage() {
   let currentImageNumber = +currentImage[0].src.match(/[0-9](?=.jpg)/).join("");
   let previousImageNumber = (currentImageNumber - 1) % 5;
 
-  currentImage[0].src = `images/image-product-${
-    previousImageNumber === 0 ? 4 : previousImageNumber
-  }.jpg`;
+  currentImage.forEach((element) => {
+    element.src = `images/image-product-${
+      previousImageNumber === 0 ? 4 : previousImageNumber
+    }.jpg`;
+  });
 }
 
 function displaySelectedImage() {
@@ -59,6 +65,14 @@ function removeElement() {
     rangeValue.textContent === "0" ? 0 : +rangeValue.textContent - 1;
 }
 
+function closeModal() {
+  modalContainer.style.display = "none";
+}
+
+function openModal() {
+  modalContainer.style.display = "grid";
+}
+
 // Event Listeners
 mobileMenu.addEventListener("click", toggleMenu);
 menuContainerClose.addEventListener("click", toggleMenu);
@@ -73,14 +87,17 @@ miniature.forEach((element) => {
   element.addEventListener("click", displaySelectedImage);
 });
 
-// testing modal
+// MODAL
 currentImage.forEach((element) => {
-  element.addEventListener("click", () => {
-    // console.log("clicked");
-    modalContainer.style.display = "grid";
-  });
+  element.addEventListener("click", openModal);
 });
 
+modalClose.addEventListener("click", closeModal);
+
+modalPreviousButton.addEventListener("click", previousImage);
+modalNextButton.addEventListener("click", nextImage);
+
+// Close modal when clicking outside
 window.addEventListener("click", (e) => {
   if (e.target === modalContainer) {
     modalContainer.style.display = "none";

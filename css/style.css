@@ -501,6 +501,39 @@ p {
     place-items: center;
   }
 
+  .modal-container__content-top {
+    display: grid;
+    /* gap: 20px; */
+    position: relative;
+  }
+
+  .modal-container__close {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .modal-container__next {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .modal-container__previous {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+  }
+
   .modal-container__content-bot {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
