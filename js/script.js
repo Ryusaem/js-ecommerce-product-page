@@ -50,6 +50,7 @@ function displaySelectedImage() {
   currentImage.forEach((element) => {
     element.src = this.src;
   });
+
   activeMiniature.classList.remove("active-miniature");
   this.classList.add("active-miniature");
 
