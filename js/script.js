@@ -4,7 +4,7 @@ const menuContainerClose = document.querySelector(".menu-container__close");
 
 const previousButton = document.querySelector(".galery-container__previous");
 const nextButton = document.querySelector(".galery-container__next");
-let currentImage = document.querySelector(".galery-container__image");
+let currentImage = document.querySelectorAll(".galery-container__image");
 
 const miniature = document.querySelectorAll(".miniature");
 let activeMiniature = document.querySelector(".active-miniature");
