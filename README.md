@@ -1,6 +1,6 @@
 # Frontend Mentor - REPLACE
 
-(FrontEnd Page)[https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub]
+[FrontEnd Mentor Page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub)
 
 ## Table of contents
 
@@ -34,7 +34,6 @@ Your users should be able to:
 
 ### Screenshot
 
-template
 ![Screenshot Project](/design/screenshot.png)
 
 ### Links
