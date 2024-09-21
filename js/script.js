@@ -22,19 +22,20 @@ function toggleMenu() {
 }
 
 function nextImage() {
-  let currentImageNumber = +currentImage.src.match(/[0-9](?=.jpg)/).join("");
+  let currentImageNumber = +currentImage[0].src.match(/[0-9](?=.jpg)/).join("");
   let nextImageNumber = (currentImageNumber + 1) % 5;
 
-  currentImage.src = `images/image-product-${
+  currentImage[0].src = `images/image-product-${
     nextImageNumber === 0 ? 1 : nextImageNumber
   }.jpg`;
+  // console.log(currentImage.src);
 }
 
 function previousImage() {
-  let currentImageNumber = +currentImage.src.match(/[0-9](?=.jpg)/).join("");
+  let currentImageNumber = +currentImage[0].src.match(/[0-9](?=.jpg)/).join("");
   let previousImageNumber = (currentImageNumber - 1) % 5;
 
-  currentImage.src = `images/image-product-${
+  currentImage[0].src = `images/image-product-${
     previousImageNumber === 0 ? 4 : previousImageNumber
   }.jpg`;
 }
