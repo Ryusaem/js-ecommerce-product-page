@@ -37,9 +37,13 @@ p {
   font-size: 16px;
 }
 
-div {
+/* --- BORDER --- */
+
+/* div {
   border: 1px solid red;
-}
+} */
+
+/* --- BORDER --- */
 
 /* --- HEADER --- */
 .header-container {
@@ -213,7 +217,7 @@ div {
 }
 
 .content-container > * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .content-container__company {
@@ -251,7 +255,7 @@ div {
 
 .price-container__discount {
   justify-self: flex-end;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 3px 10px;
   border-radius: 5px;
   font-weight: bold;
@@ -330,7 +334,7 @@ div {
   flex-direction: column;
   gap: 20px;
   justify-content: space-between;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 
   margin-bottom: 50px;
 }

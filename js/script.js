@@ -19,7 +19,6 @@ const rangeValue = document.querySelector(".range-container__range-value");
 
 function toggleMenu() {
   menuContainer.classList.toggle("active");
-  console.log("clicked");
 }
 
 function nextImage() {
@@ -41,7 +40,9 @@ function previousImage() {
 }
 
 function displaySelectedImage() {
-  currentImage.src = this.src;
+  currentImage.forEach((element) => {
+    element.src = this.src;
+  });
   activeMiniature.classList.remove("active-miniature");
   this.classList.add("active-miniature");
 
@@ -72,9 +73,11 @@ miniature.forEach((element) => {
 });
 
 // testing modal
-currentImage.addEventListener("click", () => {
-  // console.log("clicked");
-  modalContainer.style.display = "grid";
+currentImage.forEach((element) => {
+  element.addEventListener("click", () => {
+    // console.log("clicked");
+    modalContainer.style.display = "grid";
+  });
 });
 
 window.addEventListener("click", (e) => {
